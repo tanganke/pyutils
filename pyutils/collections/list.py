@@ -1,4 +1,5 @@
-from typing import Iterable
+from collections import defaultdict
+from typing import Iterable, Callable, Any
 
 
 def sorted_list(iter: Iterable) -> list:
@@ -23,3 +24,23 @@ def list_ignore(iter: Iterable, ignore=None) -> list:
         return [item for item in iter if item is not None]
     else:
         return [item for item in iter if item in ignore]
+
+
+def group_by(lst: Iterable, fn: Callable[[Any], Any]):
+    R"""
+    Groups the elements of a list based on the given function.
+
+    Examples:
+
+        >>> from math import floor
+
+        >>> group_by([6.1, 4.2, 6.3], floor)  # {4: [4.2], 6: [6.1, 6.3]}
+        >>> group_by(["one", "two", "three"], len)  # {3: ['one', 'two'], 5: ['three']}
+
+    Returns:
+        defaultdict
+    """
+    d = defaultdict(list)
+    for el in lst:
+        d[fn(el)].append(el)
+    return dict(d)
