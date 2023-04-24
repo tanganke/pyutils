@@ -9,8 +9,8 @@ This is pyutils project.
 install for development
 
 ```shell
-git clone https://github.com/tanganke/pyutils
-cd tmdpdf
+git clone --recursive https://github.com/tanganke/pyutils
+cd pyutils
 pip install -r requirements.txt
 pip install -e .
 ```
