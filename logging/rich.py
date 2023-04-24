@@ -25,7 +25,7 @@ def setup_colorlogging(force=False, **config_kwargs):
         datefmt="[%X]",
         handlers=[RichHandler()],
         force=force,
-        **config_kwargs
+        **config_kwargs,
     )
 
 

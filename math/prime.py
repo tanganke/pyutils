@@ -9,9 +9,7 @@ def is_prime(number: int):
     import math  # for function sqrt
 
     # precondition
-    assert isinstance(number, int) and (
-        number >= 0
-    ), "'number' must been an int and positive"
+    assert isinstance(number, int) and (number >= 0), "'number' must been an int and positive"
 
     status = True
 
