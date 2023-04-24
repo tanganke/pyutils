@@ -1,0 +1,4 @@
+[submodule "pyutils"]
+	path = pyutils
+	url = https://github.com/tanganke/pyutils
+	branch = submodule
