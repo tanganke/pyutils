@@ -7,10 +7,10 @@ misc usefull functions and classes.
 use it in your project:
 
 ```shell
-git submodule add https://github.com/tanganke/pyutils utils
+git submodule add -b submodule https://github.com/tanganke/pyutils utils
 ```
 or
 ```shell
-git clone https://github.com/tanganke/pyutils utils
+git clone --recursive https://github.com/tanganke/pyutils utils
 ```
 if your project is not a git repository.
