@@ -1,5 +1,8 @@
 # pyutils
 
+![GitHub repo size](https://img.shields.io/github/repo-size/tanganke/pyutils)
+![GitHub](https://img.shields.io/github/license/tanganke/pyutils)
+
 [Online Documentation](https://tanganke.github.io/pyutils/)
 
 misc usefull functions and classes.
