@@ -1,5 +1,5 @@
 from collections import defaultdict
-from typing import Iterable, Callable, Any
+from typing import Any, Callable, Iterable
 
 
 def sorted_list(iter: Iterable) -> list:
