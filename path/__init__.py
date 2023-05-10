@@ -5,8 +5,6 @@ from typing import List
 import torch
 from multipledispatch import dispatch
 
-torch.device
-
 
 @dispatch(str)
 def listdir_fullpath(dir: str) -> List[str]:
