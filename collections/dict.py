@@ -1,5 +1,12 @@
 from copy import deepcopy
-from typing import Iterable, List, Tuple, Union
+from typing import Dict, Iterable, List, Tuple, Union
+
+
+def dict_to_tuple(d: Dict):
+    """
+    Convert a dictionary to a tuple of key-value pairs.
+    """
+    return tuple(d.items())
 
 
 def dict_get(d: dict, keys: Iterable[str], default=None):
