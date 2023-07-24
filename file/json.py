@@ -1,3 +1,12 @@
+"""
+This module provides utility functions for working with JSON files.
+
+Functions:
+- print_json(j: dict, indent="  ", verbose: bool = False):
+    Print an overview of a JSON file. The function takes a dictionary `j` as input, which represents the loaded JSON file.
+    The `indent` parameter specifies the string used for indentation (default is two spaces).
+    The `verbose` parameter controls whether to print the full content of lists of dictionaries or just their type and length.
+"""
 import json
 
 

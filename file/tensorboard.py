@@ -1,5 +1,5 @@
 """
-functions deal with tensorboard logs.    
+This module provides functions for dealing with TensorBoard logs.
 """
 from typing import Dict, Iterable, List
 

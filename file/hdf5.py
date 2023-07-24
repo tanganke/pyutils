@@ -1,3 +1,10 @@
+"""
+This module contains utility functions for working with HDF5 files.
+
+Functions:
+- print_h5(group: h5py.Group, level=0, logger: Callable[[Any], Any] = print):
+    Recursively prints the contents of an HDF5 group to the console.
+"""
 from typing import Any, Callable
 
 import h5py

@@ -1,5 +1,12 @@
-R"""
-misc usefull functions and classes.
+r"""
+This module contains miscellaneous useful functions and classes.
+
+Submodules:
+- args: Contains functions for parsing command-line arguments.
+- collections: Contains additional collection classes.
+- logging: Contains additional logging classes and functions.
+- path: Contains functions for working with file paths.
+- timeit: Contains functions for timing code execution.
 """
 from typing import Iterable
 import importlib

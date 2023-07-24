@@ -1,3 +1,20 @@
+r"""
+This module provides utilities for logging with rich output formatting.
+
+It defines a function `setup_colorlogging` that sets up a logging configuration
+with a `RichHandler` that outputs log messages with rich formatting to the console.
+It also defines two functions `pprint_code` and `pprint_yaml` that pretty print
+code snippets in different formats using the `Syntax` class from the `rich.syntax`
+module.
+
+Example usage:
+
+    >>> from utils.logging.rich import setup_colorlogging, pprint_yaml
+
+    >>> setup_colorlogging()
+    >>> pprint_yaml('foo: bar')
+
+"""
 import logging
 from functools import partial
 from logging import getLogger
