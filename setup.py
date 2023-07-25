@@ -7,4 +7,10 @@ setup(
     version=__version__,
     author="Anke Tang",
     packages=["pyutils"],
+    install_requires=[
+        "numpy",
+        "pandas",
+        "matplotlib",
+        "multipledispatch",
+    ],
 )
