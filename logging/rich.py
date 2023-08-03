@@ -23,13 +23,14 @@ from rich.console import Console
 from rich.logging import RichHandler
 from rich.syntax import Syntax
 
-_log = getLogger(__name__)
+log = getLogger(__name__)
 _console = Console()
 
 __all__ = [
     "setup_colorlogging",
     "pprint_code",
     "pprint_yaml",
+    "pprint_json",
 ]
 
 
