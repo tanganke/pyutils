@@ -26,7 +26,9 @@ def parse_tensorboard_as_dict(path: str, scalars: Iterable[str]):
     )
     _absorb_print = ea.Reload()
     # make sure the scalars are in the event accumulator tags
-    assert all(s in ea.Tags()["scalars"] for s in scalars), "some scalars were not found in the event accumulator"
+    assert all(
+        s in ea.Tags()["scalars"] for s in scalars
+    ), "some scalars were not found in the event accumulator"
     return {k: pd.DataFrame(ea.Scalars(k)) for k in scalars}
 
 

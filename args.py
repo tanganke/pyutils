@@ -59,7 +59,11 @@ def verify_str_arg(
                 msg = custom_msg
             else:
                 msg = "Unknown value '{value}' for argument {arg}. Valid values are {{{valid_values}}}."
-                msg = msg.format(value=value, arg=arg, valid_values=_iterable_to_str(valid_values))
+                msg = msg.format(
+                    value=value,
+                    arg=arg,
+                    valid_values=_iterable_to_str(valid_values),
+                )
             raise ValueError(msg)
 
     return value
